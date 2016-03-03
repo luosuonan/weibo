@@ -1,0 +1,64 @@
+//
+//  Prefix.pch
+//  weibo
+//
+//  Created by admin on 16/2/21.
+//  Copyright © 2016年 admin. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIImageView+WebCache.h"
+//#import "Masonry.h"
+
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+#define SNNavgationFont  [UIFont boldSystemFontOfSize:20]
+
+#ifdef DEBUG
+#    define SNLog(...) NSLog(__VA_ARGS__)
+#else
+#    define SNLog(...)
+#endif
+
+
+
+// 配置应用信息
+#define SNAppkey @"2258354537"
+#define SNAppSecret @"935906ccfb45dfee84a5dc09797e89a5"
+#define SNRedirectURL @"http://www.hao123.com"
+
+#define SNColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define screen [UIApplication sharedApplication].keyWindow
+
+
+// cell 的内边距
+
+
+
+#define SNStatusPhotoMargin 10
+#define SNStatusCellMargin 10
+#define SNStatusCellInset 10
+#define SNStatusOriginalNameFont [UIFont systemFontOfSize:14]
+#define SNStatusOriginalTimeFont [UIFont systemFontOfSize:12]
+#define SNStatusOriginalTextFont [UIFont systemFontOfSize:15]
+#define SNStatusOriginalSourceFont [UIFont systemFontOfSize:14]
+
+
+#define SNStatusRetweetedlNameFont [UIFont systemFontOfSize:14]
+#define SNStatusRetweetedTextFont [UIFont systemFontOfSize:14]
+
+// 屏幕尺寸
+#define SNScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#endif /* Prefix_pch */
+
+
+

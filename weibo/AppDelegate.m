@@ -7,6 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "SNOAuthViewController.h"
+#import "SNControllerTool.h"
+#import "SNAccount.h"
+#import "SNAccountTool.h"
+#import "MBProgressHUD+MJ.h"
+#import "AFNetworking.h"
+#import "SNHttpTool.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +24,45 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    [self.window makeKeyAndVisible];
+    
+    
+    
+    SNAccount *account = [SNAccountTool account];
+    
+    if (account) {
+        
+        [SNControllerTool chooseRootViewController];
+    } else
+    {
+        self.window.rootViewController = [[SNOAuthViewController alloc] init];
+    }
+    
+    
+    AFNetworkReachabilityManager *mgr = [AFNetworkReachabilityManager sharedManager];
+    [mgr setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        
+        switch (status) {
+            case AFNetworkReachabilityStatusUnknown: // 未知网络
+            case AFNetworkReachabilityStatusNotReachable: // 没有网络(断网)
+                SNLog(@"没有网络(断网)");
+                [MBProgressHUD showError:@"网络异常，请检查网络设置！"];
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN: // 手机自带网络
+                SNLog(@"手机自带网络");
+                break;
+                
+            case AFNetworkReachabilityStatusReachableViaWiFi: // WIFI
+                SNLog(@"WIFI");
+                break;
+        }
+        
+    }];
+    [mgr startMonitoring];
     return YES;
 }
 
@@ -26,8 +72,10 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    // 内存极其有限
+    UIBackgroundTaskIdentifier taskID = [application beginBackgroundTaskWithExpirationHandler:^{
+        [application endBackgroundTask:taskID];
+    }];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -40,6 +88,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+    [[SDImageCache sharedImageCache] clearMemory];
+    [[SDWebImageManager sharedManager] cancelAll];
 }
 
 @end
