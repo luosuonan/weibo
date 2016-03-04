@@ -26,4 +26,8 @@ typedef enum {
 @end
 @interface SNComposeToolbar : UIView
 @property (nonatomic, weak) id<SNComposeToolbarDelegate> delegate;
+
+
+// 是否显示表情按钮
+@property (nonatomic, assign) BOOL showEmotionButton;
 @end

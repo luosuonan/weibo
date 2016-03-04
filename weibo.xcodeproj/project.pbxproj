@@ -91,6 +91,18 @@
 		848F7BB61C79DEA800296D10 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F7BB51C79DEA800296D10 /* weiboTests.m */; };
 		848F7BC11C79DEA800296D10 /* weiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F7BC01C79DEA800296D10 /* weiboUITests.m */; };
 		848F7BD31C79EB7800296D10 /* SNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F7BD21C79EB7800296D10 /* SNTabBarController.m */; };
+		84AFF91F1C87EF7D00EBCF04 /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF9111C87EF7D00EBCF04 /* MJPhoto.m */; };
+		84AFF9201C87EF7D00EBCF04 /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84AFF9121C87EF7D00EBCF04 /* MJPhotoBrowser.bundle */; };
+		84AFF9211C87EF7D00EBCF04 /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF9141C87EF7D00EBCF04 /* MJPhotoBrowser.m */; };
+		84AFF9221C87EF7D00EBCF04 /* MJPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF9161C87EF7D00EBCF04 /* MJPhotoLoadingView.m */; };
+		84AFF9231C87EF7D00EBCF04 /* MJPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF9181C87EF7D00EBCF04 /* MJPhotoProgressView.m */; };
+		84AFF9241C87EF7D00EBCF04 /* MJPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF91A1C87EF7D00EBCF04 /* MJPhotoToolbar.m */; };
+		84AFF9251C87EF7D00EBCF04 /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF91C1C87EF7D00EBCF04 /* MJPhotoView.m */; };
+		84AFF9261C87EF7D00EBCF04 /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF91E1C87EF7D00EBCF04 /* SDWebImageManager+MJ.m */; };
+		84AFF92D1C87FCEF00EBCF04 /* SNEmotionKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF92C1C87FCEF00EBCF04 /* SNEmotionKeyboard.m */; };
+		84AFF9331C87FF4900EBCF04 /* SNEmotionListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF9321C87FF4900EBCF04 /* SNEmotionListView.m */; };
+		84AFF9361C8808DA00EBCF04 /* SNEmotionToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF9351C8808DA00EBCF04 /* SNEmotionToolbar.m */; };
+		84AFF9391C880E5800EBCF04 /* SNEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AFF9381C880E5800EBCF04 /* SNEmotion.m */; };
 		84B6DF291C7BF7C70005EF44 /* SNSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6DF281C7BF7C70005EF44 /* SNSearchBar.m */; };
 		84B6DF2C1C7BFE440005EF44 /* SNTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6DF2B1C7BFE440005EF44 /* SNTitleButton.m */; };
 		84B6DF2F1C7C0CE20005EF44 /* SNPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B6DF2E1C7C0CE20005EF44 /* SNPopMenu.m */; };
@@ -106,6 +118,9 @@
 		84CC8D871C84C42900D4EF62 /* SNUnreadCountResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC8D861C84C42900D4EF62 /* SNUnreadCountResult.m */; };
 		84CC8D8A1C84C45800D4EF62 /* SNBaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC8D891C84C45800D4EF62 /* SNBaseParam.m */; };
 		84CC8D8D1C84C8BA00D4EF62 /* SNUnreadCountParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CC8D8C1C84C8BA00D4EF62 /* SNUnreadCountParam.m */; };
+		84DB7F9D1C88235400985521 /* EmotionIcons in Resources */ = {isa = PBXBuildFile; fileRef = 84DB7F9C1C88235400985521 /* EmotionIcons */; };
+		84DB7FA01C882EF500985521 /* SNEmotionGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB7F9F1C882EF500985521 /* SNEmotionGridView.m */; };
+		84DB7FA31C88323500985521 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB7FA21C88323500985521 /* NSString+Emoji.m */; };
 		84DE269E1C85E51800E3FC2E /* SNStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DE26991C85E51800E3FC2E /* SNStatusCell.m */; };
 		84DE269F1C85E51800E3FC2E /* SNStatusDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DE269B1C85E51800E3FC2E /* SNStatusDetailView.m */; };
 		84DE26A01C85E51800E3FC2E /* SNStatusToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DE269D1C85E51800E3FC2E /* SNStatusToolbar.m */; };
@@ -309,6 +324,29 @@
 		848F7BD11C79EB7800296D10 /* SNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNTabBarController.h; path = ../../../SNTabBarController.h; sourceTree = "<group>"; };
 		848F7BD21C79EB7800296D10 /* SNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNTabBarController.m; path = ../../../SNTabBarController.m; sourceTree = "<group>"; };
 		848F7BD41C79F97D00296D10 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		84AFF9101C87EF7D00EBCF04 /* MJPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhoto.h; sourceTree = "<group>"; };
+		84AFF9111C87EF7D00EBCF04 /* MJPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhoto.m; sourceTree = "<group>"; };
+		84AFF9121C87EF7D00EBCF04 /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
+		84AFF9131C87EF7D00EBCF04 /* MJPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoBrowser.h; sourceTree = "<group>"; };
+		84AFF9141C87EF7D00EBCF04 /* MJPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoBrowser.m; sourceTree = "<group>"; };
+		84AFF9151C87EF7D00EBCF04 /* MJPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoLoadingView.h; sourceTree = "<group>"; };
+		84AFF9161C87EF7D00EBCF04 /* MJPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoLoadingView.m; sourceTree = "<group>"; };
+		84AFF9171C87EF7D00EBCF04 /* MJPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoProgressView.h; sourceTree = "<group>"; };
+		84AFF9181C87EF7D00EBCF04 /* MJPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoProgressView.m; sourceTree = "<group>"; };
+		84AFF9191C87EF7D00EBCF04 /* MJPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoToolbar.h; sourceTree = "<group>"; };
+		84AFF91A1C87EF7D00EBCF04 /* MJPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoToolbar.m; sourceTree = "<group>"; };
+		84AFF91B1C87EF7D00EBCF04 /* MJPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhotoView.h; sourceTree = "<group>"; };
+		84AFF91C1C87EF7D00EBCF04 /* MJPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoView.m; sourceTree = "<group>"; };
+		84AFF91D1C87EF7D00EBCF04 /* SDWebImageManager+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageManager+MJ.h"; sourceTree = "<group>"; };
+		84AFF91E1C87EF7D00EBCF04 /* SDWebImageManager+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageManager+MJ.m"; sourceTree = "<group>"; };
+		84AFF92B1C87FCEF00EBCF04 /* SNEmotionKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNEmotionKeyboard.h; sourceTree = "<group>"; };
+		84AFF92C1C87FCEF00EBCF04 /* SNEmotionKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNEmotionKeyboard.m; sourceTree = "<group>"; };
+		84AFF9311C87FF4900EBCF04 /* SNEmotionListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNEmotionListView.h; sourceTree = "<group>"; };
+		84AFF9321C87FF4900EBCF04 /* SNEmotionListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNEmotionListView.m; sourceTree = "<group>"; };
+		84AFF9341C8808DA00EBCF04 /* SNEmotionToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNEmotionToolbar.h; sourceTree = "<group>"; };
+		84AFF9351C8808DA00EBCF04 /* SNEmotionToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNEmotionToolbar.m; sourceTree = "<group>"; };
+		84AFF9371C880E5800EBCF04 /* SNEmotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNEmotion.h; sourceTree = "<group>"; };
+		84AFF9381C880E5800EBCF04 /* SNEmotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNEmotion.m; sourceTree = "<group>"; };
 		84B6DF271C7BF7C70005EF44 /* SNSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSearchBar.h; sourceTree = "<group>"; };
 		84B6DF281C7BF7C70005EF44 /* SNSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSearchBar.m; sourceTree = "<group>"; };
 		84B6DF2A1C7BFE440005EF44 /* SNTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNTitleButton.h; sourceTree = "<group>"; };
@@ -339,6 +377,11 @@
 		84CC8D891C84C45800D4EF62 /* SNBaseParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNBaseParam.m; sourceTree = "<group>"; };
 		84CC8D8B1C84C8BA00D4EF62 /* SNUnreadCountParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNUnreadCountParam.h; sourceTree = "<group>"; };
 		84CC8D8C1C84C8BA00D4EF62 /* SNUnreadCountParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNUnreadCountParam.m; sourceTree = "<group>"; };
+		84DB7F9C1C88235400985521 /* EmotionIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EmotionIcons; sourceTree = "<group>"; };
+		84DB7F9E1C882EF500985521 /* SNEmotionGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNEmotionGridView.h; sourceTree = "<group>"; };
+		84DB7F9F1C882EF500985521 /* SNEmotionGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNEmotionGridView.m; sourceTree = "<group>"; };
+		84DB7FA11C88323500985521 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Emoji.h"; path = "../../compose/Model/NSString+Emoji.h"; sourceTree = "<group>"; };
+		84DB7FA21C88323500985521 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Emoji.m"; path = "../../compose/Model/NSString+Emoji.m"; sourceTree = "<group>"; };
 		84DE26981C85E51800E3FC2E /* SNStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNStatusCell.h; sourceTree = "<group>"; };
 		84DE26991C85E51800E3FC2E /* SNStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNStatusCell.m; sourceTree = "<group>"; };
 		84DE269A1C85E51800E3FC2E /* SNStatusDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNStatusDetailView.h; sourceTree = "<group>"; };
@@ -625,6 +668,8 @@
 		846D7E3C1C7C888B003B2AB2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84AFF9371C880E5800EBCF04 /* SNEmotion.h */,
+				84AFF9381C880E5800EBCF04 /* SNEmotion.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -638,6 +683,7 @@
 				846D814B1C7EF360003B2AB2 /* SNComposeToolbar.m */,
 				84798B361C7F352A004EDF31 /* SNComposePhotosView.h */,
 				84798B371C7F352A004EDF31 /* SNComposePhotosView.m */,
+				84AFF92A1C87FCEF00EBCF04 /* emotionKeyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -695,6 +741,7 @@
 		846D7E4D1C7D5E62003B2AB2 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				84AFF90F1C87EF7D00EBCF04 /* MJPhotoBrowser */,
 				846D81211C7ED6E2003B2AB2 /* Masonry */,
 				846D7EEA1C7DBBF4003B2AB2 /* MJExtension */,
 				846D7EAF1C7DAC0C003B2AB2 /* SDWebImage */,
@@ -764,6 +811,8 @@
 		846D7E7F1C7D9F07003B2AB2 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				84DB7FA11C88323500985521 /* NSString+Emoji.h */,
+				84DB7FA21C88323500985521 /* NSString+Emoji.m */,
 				846788EB1C7B7E80006714E0 /* UIBarButtonItem+Extension.h */,
 				846788EC1C7B7E80006714E0 /* UIBarButtonItem+Extension.m */,
 				846788ED1C7B7E80006714E0 /* UIImage+Extension.h */,
@@ -904,6 +953,7 @@
 			children = (
 				846788C71C7B7602006714E0 /* Classes */,
 				848F7BA41C79DEA800296D10 /* Main.storyboard */,
+				84DB7F9C1C88235400985521 /* EmotionIcons */,
 				848F7BA71C79DEA800296D10 /* Assets.xcassets */,
 				848F7BA91C79DEA800296D10 /* LaunchScreen.storyboard */,
 				848F7BAC1C79DEA800296D10 /* Info.plist */,
@@ -937,6 +987,43 @@
 				848F7BC21C79DEA800296D10 /* Info.plist */,
 			);
 			path = weiboUITests;
+			sourceTree = "<group>";
+		};
+		84AFF90F1C87EF7D00EBCF04 /* MJPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				84AFF9101C87EF7D00EBCF04 /* MJPhoto.h */,
+				84AFF9111C87EF7D00EBCF04 /* MJPhoto.m */,
+				84AFF9121C87EF7D00EBCF04 /* MJPhotoBrowser.bundle */,
+				84AFF9131C87EF7D00EBCF04 /* MJPhotoBrowser.h */,
+				84AFF9141C87EF7D00EBCF04 /* MJPhotoBrowser.m */,
+				84AFF9151C87EF7D00EBCF04 /* MJPhotoLoadingView.h */,
+				84AFF9161C87EF7D00EBCF04 /* MJPhotoLoadingView.m */,
+				84AFF9171C87EF7D00EBCF04 /* MJPhotoProgressView.h */,
+				84AFF9181C87EF7D00EBCF04 /* MJPhotoProgressView.m */,
+				84AFF9191C87EF7D00EBCF04 /* MJPhotoToolbar.h */,
+				84AFF91A1C87EF7D00EBCF04 /* MJPhotoToolbar.m */,
+				84AFF91B1C87EF7D00EBCF04 /* MJPhotoView.h */,
+				84AFF91C1C87EF7D00EBCF04 /* MJPhotoView.m */,
+				84AFF91D1C87EF7D00EBCF04 /* SDWebImageManager+MJ.h */,
+				84AFF91E1C87EF7D00EBCF04 /* SDWebImageManager+MJ.m */,
+			);
+			path = MJPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		84AFF92A1C87FCEF00EBCF04 /* emotionKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84AFF92B1C87FCEF00EBCF04 /* SNEmotionKeyboard.h */,
+				84AFF92C1C87FCEF00EBCF04 /* SNEmotionKeyboard.m */,
+				84AFF9311C87FF4900EBCF04 /* SNEmotionListView.h */,
+				84AFF9321C87FF4900EBCF04 /* SNEmotionListView.m */,
+				84AFF9341C8808DA00EBCF04 /* SNEmotionToolbar.h */,
+				84AFF9351C8808DA00EBCF04 /* SNEmotionToolbar.m */,
+				84DB7F9E1C882EF500985521 /* SNEmotionGridView.h */,
+				84DB7F9F1C882EF500985521 /* SNEmotionGridView.m */,
+			);
+			path = emotionKeyboard;
 			sourceTree = "<group>";
 		};
 		84CC8D6C1C84C3BB00D4EF62 /* SNHomeStatus */ = {
@@ -1071,6 +1158,7 @@
 				TargetAttributes = {
 					848F7B971C79DEA800296D10 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = P43C864EVS;
 					};
 					848F7BB01C79DEA800296D10 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1110,9 +1198,11 @@
 				848F7BAB1C79DEA800296D10 /* LaunchScreen.storyboard in Resources */,
 				846D7E721C7D5ECA003B2AB2 /* MBProgressHUD.bundle in Resources */,
 				846D813C1C7ED6E2003B2AB2 /* Info.plist in Resources */,
+				84DB7F9D1C88235400985521 /* EmotionIcons in Resources */,
 				846D7F0E1C7ED305003B2AB2 /* SNLoadMoreFooter.xib in Resources */,
 				848F7BA81C79DEA800296D10 /* Assets.xcassets in Resources */,
 				848F7BA61C79DEA800296D10 /* Main.storyboard in Resources */,
+				84AFF9201C87EF7D00EBCF04 /* MJPhotoBrowser.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1145,16 +1235,20 @@
 				846788EA1C7B791C006714E0 /* SNNavigationController.m in Sources */,
 				846788E21C7B7602006714E0 /* SNHomeViewController.m in Sources */,
 				84DE26A01C85E51800E3FC2E /* SNStatusToolbar.m in Sources */,
+				84DB7FA31C88323500985521 /* NSString+Emoji.m in Sources */,
 				847133ED1C8714AB00B02964 /* NSDate+MJ.m in Sources */,
 				84CC8D8A1C84C45800D4EF62 /* SNBaseParam.m in Sources */,
 				846788F31C7B7E80006714E0 /* UIView+Extension.m in Sources */,
+				84AFF92D1C87FCEF00EBCF04 /* SNEmotionKeyboard.m in Sources */,
 				846788E31C7B7602006714E0 /* SNMessageViewController.m in Sources */,
 				846D7F081C7DBBF4003B2AB2 /* NSObject+MJProperty.m in Sources */,
 				846D7EDF1C7DAC0C003B2AB2 /* UIImageView+WebCache.m in Sources */,
+				84AFF91F1C87EF7D00EBCF04 /* MJPhoto.m in Sources */,
 				846D7E6D1C7D5ECA003B2AB2 /* AFURLConnectionOperation.m in Sources */,
 				84CC8D721C84C3BB00D4EF62 /* SNHomeStatusResult.m in Sources */,
 				846D7E6C1C7D5ECA003B2AB2 /* AFSecurityPolicy.m in Sources */,
 				846D7EDA1C7DAC0C003B2AB2 /* UIButton+WebCache.m in Sources */,
+				84AFF9331C87FF4900EBCF04 /* SNEmotionListView.m in Sources */,
 				846D7E731C7D5ECA003B2AB2 /* MBProgressHUD.m in Sources */,
 				846D7F031C7DBBF4003B2AB2 /* MJPropertyKey.m in Sources */,
 				846788F21C7B7E80006714E0 /* UIImage+Extension.m in Sources */,
@@ -1170,6 +1264,7 @@
 				846D7EE91C7DB338003B2AB2 /* SNPhoto.m in Sources */,
 				846D81441C7ED6E2003B2AB2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				846D81421C7ED6E2003B2AB2 /* MASViewConstraint.m in Sources */,
+				84AFF9361C8808DA00EBCF04 /* SNEmotionToolbar.m in Sources */,
 				84DE26A91C85EE3200E3FC2E /* SNStatusFrame.m in Sources */,
 				846D81451C7ED6E2003B2AB2 /* View+MASAdditions.m in Sources */,
 				846D7ED41C7DAC0C003B2AB2 /* SDWebImageCompat.m in Sources */,
@@ -1177,9 +1272,14 @@
 				84DE269E1C85E51800E3FC2E /* SNStatusCell.m in Sources */,
 				846D7F061C7DBBF4003B2AB2 /* NSObject+MJCoding.m in Sources */,
 				846D7ED61C7DAC0C003B2AB2 /* SDWebImageDownloader.m in Sources */,
+				84AFF9231C87EF7D00EBCF04 /* MJPhotoProgressView.m in Sources */,
+				84AFF9241C87EF7D00EBCF04 /* MJPhotoToolbar.m in Sources */,
 				846D7ED71C7DAC0C003B2AB2 /* SDWebImageDownloaderOperation.m in Sources */,
 				84CC8D8D1C84C8BA00D4EF62 /* SNUnreadCountParam.m in Sources */,
 				846D7ED51C7DAC0C003B2AB2 /* SDWebImageDecoder.m in Sources */,
+				84AFF9391C880E5800EBCF04 /* SNEmotion.m in Sources */,
+				84AFF9261C87EF7D00EBCF04 /* SDWebImageManager+MJ.m in Sources */,
+				84AFF9251C87EF7D00EBCF04 /* MJPhotoView.m in Sources */,
 				846D7ED81C7DAC0C003B2AB2 /* SDWebImageManager.m in Sources */,
 				848F7BD31C79EB7800296D10 /* SNTabBarController.m in Sources */,
 				846788F11C7B7E80006714E0 /* UIBarButtonItem+Extension.m in Sources */,
@@ -1194,13 +1294,16 @@
 				846D7E681C7D5ECA003B2AB2 /* AFHTTPRequestOperation.m in Sources */,
 				846D7F051C7DBBF4003B2AB2 /* NSObject+MJClass.m in Sources */,
 				84CC8D711C84C3BB00D4EF62 /* SNHomeStatusParam.m in Sources */,
+				84AFF9221C87EF7D00EBCF04 /* MJPhotoLoadingView.m in Sources */,
 				846D7F041C7DBBF4003B2AB2 /* MJPropertyType.m in Sources */,
 				84CC8D871C84C42900D4EF62 /* SNUnreadCountResult.m in Sources */,
 				84CC8D621C84B61300D4EF62 /* SNUserTool.m in Sources */,
 				846D7E701C7D5ECA003B2AB2 /* AFURLSessionManager.m in Sources */,
 				846D81431C7ED6E2003B2AB2 /* NSArray+MASAdditions.m in Sources */,
 				846D81401C7ED6E2003B2AB2 /* MASLayoutConstraint.m in Sources */,
+				84AFF9211C87EF7D00EBCF04 /* MJPhotoBrowser.m in Sources */,
 				846788E11C7B7602006714E0 /* SNDiscoverViewController.m in Sources */,
+				84DB7FA01C882EF500985521 /* SNEmotionGridView.m in Sources */,
 				846D7E6B1C7D5ECA003B2AB2 /* AFNetworkReachabilityManager.m in Sources */,
 				84CC8D791C84C3C700D4EF62 /* SNSendStatusResult.m in Sources */,
 				846D7E7E1C7D87C4003B2AB2 /* SNAccountTool.m in Sources */,
@@ -1377,13 +1480,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/weibo/Prefix.pch";
 				INFOPLIST_FILE = weibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luosuonan.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1392,13 +1498,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/weibo/Prefix.pch";
 				INFOPLIST_FILE = weibo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luosuonan.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

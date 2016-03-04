@@ -8,6 +8,9 @@
 
 #import "SNStatusPhotosView.h"
 #import "SNStatusPhotoView.h"
+#import "MJPhotoBrowser.h"
+#import "MJPhoto.h"
+#import "SNPhoto.h"
 
 #define SNStatusPhotosMaxCount 9
 #define SNStatusPhotosMaxCols(photosCount) ((photosCount==4)?2:3)
@@ -42,7 +45,21 @@
 
 - (void)tapPhoto:(UITapGestureRecognizer *)reginazer
 {
-     
+    MJPhotoBrowser *browser = [[MJPhotoBrowser alloc] init];
+    
+    NSMutableArray *photos = [NSMutableArray array];
+    
+    int count = (int)self.pic_urls.count;
+    for (int i = 0; i < count; i++) {
+        SNPhoto *pic = self.pic_urls[i];
+        MJPhoto *photo = [[MJPhoto alloc] init];
+        photo.url = [NSURL URLWithString:pic.bmiddle_pic];
+        photo.srcImageView = self.subviews[i];
+        [photos addObject:photo];
+    }
+    browser.photos = photos;
+    browser.currentPhotoIndex = reginazer.view.tag;
+    [browser show];
 }
 
 

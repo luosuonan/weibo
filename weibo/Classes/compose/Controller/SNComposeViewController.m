@@ -16,14 +16,28 @@
 #import "AFNetworking.h"
 #import "SNHttpTool.h"
 #import "SNStatusTool.h"
+#import "SNEmotionKeyboard.h"
 
 @interface SNComposeViewController ()<SNComposeToolbarDelegate, UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (nonatomic, weak) SNTextView *textView;
 @property (nonatomic, weak) SNComposeToolbar *toolbar;
 @property (nonatomic, weak) SNComposePhotosView *photosView;
+@property (nonatomic, strong) SNEmotionKeyboard *emotionKeyboard;
+
+@property (nonatomic, assign, getter=isChangingKeyboard) BOOL changingKeyboard;
 @end
 
 @implementation SNComposeViewController
+
+- (SNEmotionKeyboard *)emotionKeyboard
+{
+    if (_emotionKeyboard == nil) {
+        _emotionKeyboard = [SNEmotionKeyboard keyboard];
+        _emotionKeyboard.bounds = CGRectMake(0, 0, SNScreenWidth, 216);
+//        _emotionKeyboard.backgroundColor = [UIColor blueColor];
+    }
+    return _emotionKeyboard;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -81,6 +95,11 @@
  */
 - (void)keyboardWillHide:(NSNotification *)note
 {
+    
+    if (self.isChangingKeyboard) {
+        self.changingKeyboard = NO;
+        return;
+    }
     // 1.键盘弹出需要的时间
     CGFloat duration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     
@@ -151,7 +170,22 @@
 
 - (void)openEmotion
 {
-      
+    
+    self.changingKeyboard = YES;
+    if (self.textView.inputView) {
+        self.textView.inputView = nil;
+        self.toolbar.showEmotionButton = YES;
+    } else {
+        self.textView.inputView = self.emotionKeyboard;
+        self.toolbar.showEmotionButton = NO;
+    }
+    
+    [self.textView resignFirstResponder];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [self.textView becomeFirstResponder];
+    });
 }
 
 #pragma mark -- UINavigationControllerDelegate, UIImagePickerControllerDelegate
